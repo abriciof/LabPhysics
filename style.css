@@ -60,7 +60,8 @@ html {
 
 figcaption {
   font-size: 15px;
-  margin-left: 350px;
+  width: max-content;
+  /* margin-left: 350px; */
 }
 
 
