@@ -58,4 +58,21 @@ html {
 
 }
 
+figcaption {
+  font-size: 15px;
+  margin-left: 350px;
+}
+
+
+figcaption a{
+  text-decoration: none;
+  color: rgb(19, 43, 68);
+  
+}
+
+.textos {
+  font-size: 18px;
+  text-align: justify;
+
+}
 
