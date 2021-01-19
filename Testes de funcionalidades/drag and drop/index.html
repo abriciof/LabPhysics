@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> drag in drop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href = "https://fonts.googleapis.com/css2? family = Nunito: ital, wght @ 0,400; 0,600; 0,700; 0,800; 0,900; 1,700 & display = swap "rel =" stylesheet ">
+
+</head>
+<body>
+
+
+   
+
+    
+    <div class="boards">
+        <div class="board">
+            <h3> A fazer</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 01</div>
+                </div>
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 02</div>
+                </div>
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 03</div>
+                </div>
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 04</div>
+                </div>
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 05</div>
+                </div>
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 06</div>
+                </div>
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 07</div>
+                </div>
+                <div class="card" draggable="true">
+                    <div class="status green"></div>
+                    <div class="content"> Tarefa 08</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="board">
+            <h3>Em processo</h3>
+            <div class="dropzone">
+                
+            </div>
+        </div>
+        <div class="board">
+            <h3>Feito</h3>
+            <div class="dropzone">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+
+    <div class="caixaSlider">
+        <div id="slider"class="slider">
+            <div class="thumb"></div>
+        
+        </div>
+    </div>
+
+    
+    <script>
+        let thumb = slider.querySelector('.thumb');
+    
+        thumb.onmousedown = function(event) {
+          event.preventDefault(); // prevent selection start (browser action)
+    
+          let shiftX = event.clientX - thumb.getBoundingClientRect().left;
+          // shiftY not needed, the thumb moves only horizontally
+    
+          document.addEventListener('mousemove', onMouseMove);
+          document.addEventListener('mouseup', onMouseUp);
+    
+          function onMouseMove(event) {
+            let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
+    
+            // the pointer is out of slider => lock the thumb within the bounaries
+            if (newLeft < 0) {
+              newLeft = 0;
+            }
+            let rightEdge = slider.offsetWidth - thumb.offsetWidth;
+            if (newLeft > rightEdge) {
+              newLeft = rightEdge;
+            }
+    
+            thumb.style.left = newLeft + 'px';
+          }
+    
+          function onMouseUp() {
+            document.removeEventListener('mouseup', onMouseUp);
+            document.removeEventListener('mousemove', onMouseMove);
+          }
+    
+        };
+    
+        thumb.ondragstart = function() {
+          return false;
+        };
+    
+    </script>
+    -->
+
+
+
+
+    <script src="script.js" defer></script>
+    
+</body>
+</html>
