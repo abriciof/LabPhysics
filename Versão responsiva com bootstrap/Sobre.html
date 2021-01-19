@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Teste Bootstrap</title>
+        <title> Sobre</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="../style.css">
@@ -46,101 +46,10 @@
        
             <div class="container pt-5">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4">
-                        <h1>Bem vindo ao LabPhysics Simulator</h1>
-                        <h4 class="mb-4">Simulador de experimentos de física.</h4>
-                        <a
-                            href="#"
-                            class="button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2"
-                            >Saiba mais </a>
-                        <a
-                            href="#"
-                            class="button btn btn-outline-primary button-primary-outline d-md-inline-block d-block"
-                            >Contato </a>
-                    </div>
-                        <div class="col-lg-8 col-md-6 align-self-center text-center">
-                        <img src="img/inicio.png" class="img-fluid img-principal "  width="80%"/>
-                    </div>
-                </div>
-                <div class="row"><br></div>
-
-                <div class="row">
-                  <div class="offset-1 col-2 tensao">
-                    <label >Tensão </label>
-                                      
-                  </div>
-                  <div class="col-3 volts">
-                    <input type="text" id="resultadoTensao" class="saida-range" value="0" readonly> 
-                    <label>Volts</label>
-                       
+                  <div class="col">
+                    <h1>Sobre</h1>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="offset-1 col-3">                   
-                    <div class="controlador01">
-                      <form>
-                        <div class="form-group align-items-center">
-                          <label for="customRangeTensao"></label>
-                          <input type="range" class="custom-range" value="0" min="0.0" max="15.0" step="0.5" id="customRangeTensao" 
-                          oninput="resultadoTensao.value=value" onchange="resultadoTensao.value=value">
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row"><br></div>
-
-                <div class="row">
-                  <div class="offset-1 col-2 resistencia">
-                    <label>Resistência </label>
-                                      
-                  </div>
-                  <div class="col-3 ohms" >
-
-                    <input type="text" id="resultadoResistencia" class="saida-range" value="0" readonly> 
-                    <label>Ohms</label>
-                        
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="offset-1 col-3">                   
-                    <div class="controlador02">
-                      <form>
-                        <div class="form-group align-items-center">
-                          <label for="customRangeResistencia"></label>
-                          <input type="range" class="custom-range" value="0" min="0.0" max="15.0" step="0.5" id="customRangeResistencia" 
-                          oninput="resultadoResistencia.value=value" onchange="resultadoResistencia.value=value">
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row"><br></div>
-
-                <div class="row">
-                  <div class="offset-1 col-2">
-                    <div class="visor" id="visor">
-                      0.00 A
-                      
-                    </div>
-
-                  </div>
-                  <div class="col-1">
-                    <button type="button" class="btn btn-success" onclick="calcularCorrente(resultadoTensao.value,resultadoResistencia.value);">Calcular</button>
-                  </div>
-                </div>
-
-
-
-
-
-
-
-
             </div>
       
 
