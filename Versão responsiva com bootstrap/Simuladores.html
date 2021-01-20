@@ -6,39 +6,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Simuladores </title>
+        <title> LabPhysics Simulator - Simuladores </title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="../style.css">
-    </head>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/Article-Clean.css">
+        <link rel="stylesheet" href="assets/css/Article-Dual-Column.css">
+        <link rel="stylesheet" href="assets/css/Article-List.css">
+        <link rel="stylesheet" href="assets/css/Dark-NavBar-1.css">
+        <link rel="stylesheet" href="assets/css/Dark-NavBar-2.css">
+        <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
+        <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+        <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+        <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom-1.css">
+        <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom-2.css">
+        <link rel="stylesheet" href="assets/css/Slider_Carousel_webalgustocom.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/untitled.css">
+        </head>
     <body>
 
         <!-- Cabeçalho do site -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">LabPhysics Simulator</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Início</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Trilha_de_Aprendizagem.html">Trilha de Aprendizagem</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="Simuladores.html">Simuladores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Sobre.html">Sobre</a>
-                  </li>
-                 
-                </ul>
-              </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#37434d;color:#ffffff;">
+        <div class="container-fluid"><a class="navbar-brand" href="../index.html" style="font-family: Lora, serif;">&nbsp;LabPhysics Simulator</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navcol-1" style="font-family: Lora, serif;">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item" role="presentation" style="font-family: Lora, serif;"><a class="nav-link" style="color: #ffffff;font-family: Lora, serif;" href="../index.html">&nbsp;Início</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link" style="color: #ffffff;font-family: Lora, serif;" href="Trilha_de_Aprendizagem.html">&nbsp;Trilha de Conhecimento</a></li>
+              <li class="nav-item" role="presentation"><a class="nav-link active" style="color: #ffffff;font-family: Lora, serif;" href="Simuladores.html">Simuladores</a></li>
+              <li class="nav-item" role="presentation" style="font-family: Lora, serif;"><a class="nav-link" style="color: #ffffff;font-family: Lora, serif;" href="Sobre.html">&nbsp;Sobre</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
         
         <!-- Conteúdo -->
@@ -49,11 +53,11 @@
                 <div class="row"><h1>Simuladores</h1><br></div>
 
                 <div class="row">
-                  <div class="offset-1 col-2 tensao">
+                  <div class="col tensao">
                     <label >Tensão </label>
                                       
                   </div>
-                  <div class="col-3 volts">
+                  <div class="col volts">
                     <input type="text" id="resultadoTensao" class="saida-range" value="0" readonly> 
                     <label>Volts</label>
                        
@@ -61,7 +65,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="offset-1 col-3">                   
+                  <div class="col">                   
                     <div class="form-group">
                       <form>
                         <div class="form-group align-items-center">
@@ -77,11 +81,11 @@
                 <div class="row"><br></div>
 
                 <div class="row">
-                  <div class="offset-1 col-2 resistencia">
+                  <div class="col resistencia">
                     <label>Resistência </label>
                                       
                   </div>
-                  <div class="col-3 ohms" >
+                  <div class="col ohms" >
 
                     <input type="text" id="resultadoResistencia" class="saida-range" value="0" readonly> 
                     <label>Ohms</label>
@@ -90,7 +94,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="offset-1 col-3">                   
+                  <div class="col">                   
                     <div class="controlador02">
                       <form>
                         <div class="form-group align-items-center">
@@ -106,14 +110,14 @@
                 <div class="row"><br></div>
 
                 <div class="row">
-                  <div class="offset-1 col-2">
+                  <div class="col">
                     <div class="visor" id="visor">
                       0.00 A
                       
                     </div>
 
                   </div>
-                  <div class="col-1">
+                  <div class="col">
                     <button type="button" class="btn btn-success" onclick="calcularCorrente(resultadoTensao.value,resultadoResistencia.value);">Calcular</button>
                   </div>
                 </div>
@@ -146,6 +150,9 @@
         
         <!-- Script -->
         <script src="../script.js" defer></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/Slider_Carousel_webalgustocom.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
