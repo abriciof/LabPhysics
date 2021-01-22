@@ -1,5 +1,5 @@
 <?php
 
-include_once("pags/index.html");
+require_once(__DIR__.'/pags/index.html');
 
 ?>
