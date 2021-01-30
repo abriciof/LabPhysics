@@ -7,9 +7,8 @@
     <title>Lei de Hooke e a Força Elástica</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
 </head>
 
 <body>
@@ -17,44 +16,34 @@
         <div class="container-fluid"><a class="navbar-brand" style="font-family: Lora, serif;">LabPhysics Simulator</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse justify-content-end" id="navcol-2">
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html" style="font-family: Lora, serif;">Início</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="trilha01.html" style="color: #fff;">Trilha de Aprendizagem</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="trilha01.html">O que é Física?</a><a class="dropdown-item" role="presentation" href="trilha02.html">Experimentação Física</a><a class="dropdown-item" role="presentation" href="trilha03.html">Lei de Hooke e a Força Elástica</a>
-                            <a
-                                class="dropdown-item" role="presentation" href="trilha04.html">Lançamento Oblíquo</a><a class="dropdown-item" role="presentation" href="trilha05.html">Lei de Ohm</a>
-                                <div class="dropdown-divider" role="presentation"></div>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="trilha01.html">O que é Física?</a>
+                            <a class="dropdown-item" role="presentation" href="trilha02.html">Experimentação Física</a><a class="dropdown-item" role="presentation" href="trilha03.html">Lei de Hooke e a Força Elástica</a>
+                            <a class="dropdown-item" role="presentation" href="#">Lançamento Oblíquo</a>
+                            <a class="dropdown-item" role="presentation" href="#">Lei de Ohm</a>
+                                
+                            <div class="dropdown-divider" role="presentation"></div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Simuladores de Física</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Lei de Hooke e a Força Elástica</a><a class="dropdown-item" role="presentation" href="#">Lançamento Oblíquo</a><a class="dropdown-item" role="presentation" href="#">Lei de Ohm</a>
-                            <div
-                                class="dropdown-divider" role="presentation"></div>
-        </div>
-        </li>
-        <li class="nav-item" role="presentation"></li>
-        <li class="nav-item" role="presentation"></li>
-        <li class="nav-item" role="presentation"><a class="nav-link" href="pag%20de%20testes.html" style="font-family: Lora, serif;">Sobre</a></li>
-        </ul>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Simuladores</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="simulador01.html">Lei de Ohm</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Lançamento de Projétil</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Lei de Hooke</a>
+                            
+                                
+                            <div class="dropdown-divider" role="presentation"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="font-family: Lora, serif;">Sobre</a></li>
+                </ul>
         </div>
         </div>
     </nav>
     <p></p>
     <h1 class="text-center" style="font-family: Lora, serif;"><strong>Trilha de Aprendizagem</strong></h1>
-    <p></p>
-    <div class="text-center d-flex justify-content-center">
-        <nav class="text-center justify-content-center">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="trilha02.html" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha01.html">1</a></li>
-                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha02.html">2</a></li>
-                <li class="page-item disabled active" style="font-family: Lora, serif;"><a class="page-link" href="trilha03.html">3</a></li>
-                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha04.html">4</a></li>
-                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha05.html">5</a></li>
-                <li class="page-item"><a class="page-link" href="trilha04.html" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-            </ul>
-        </nav>
-    </div>
     <div class="article-clean">
         <div class="container">
             <div class="row text-sm-center text-md-center text-lg-right text-xl-right">
@@ -119,7 +108,17 @@
                         <p class="text-justify">Agora, quais seriam as formas mais comuns de expressar a constante elástica? No SI, ela é dada por N/m (newton por metro), mas, também costumam aparecer N/cm (newton por centímetro) e kN/m (quilonewton por metro).&nbsp;Conforme
                             já dito, a constante elástica mede a dureza da mola. Então, quanto mais dura for a mola, maior será sua constante elástica. Desse modo, ao comparar duas molas, de constantes elásticas iguais a 200 N/m e 300 N/m, você sabe que
                             a segunda mola é a mais dura, por exemplo.<br></p>
-                        <p></p>
+                        <hr>
+                        <h2 class="text-left" style="font-size: 20px;font-weight: 700;color: rgb(51,51,51);">Trabalhando com molas verticais</h2><img src="assets/img/lei-de-hooke07.jpg" width="45%">
+                        <p>Fonte:&nbsp;<a href="https://blog.professorferretto.com.br/wp-content/uploads/2020/04/mola-vertical.jpg.webp">Professor Ferreto</a></p>
+                        <p class="text-justify">Na imagem acima, temos uma mola inicialmente sozinha, com a posição de equilíbrio dada por&nbsp;x0&nbsp;= 10 cm. Ao adicionar um bloco na mola, ela se deforma. Se a constante elástica da mola tem valor k = 5 N/cm e a deformação
+                            foi de 2 cm, qual é a força elástica que essa mola realiza sobre o bloco pendurado?<br></p><img src="assets/img/lei-de-hooke08.png" width="40%">
+                        <p class="text-justify">Note como a força elástica tem exatamente o mesmo valor do peso do bloco. Isso significa que o sistema massa-mola atingiu uma nova situação de equilíbrio, onde a soma das forças é zero, tal como diz a Primeira Lei de Newton. Conferindo:<br></p>
+                        <img
+                            src="assets/img/lei-de-hooke09.jpg" width="25%"><img src="assets/img/lei-de-hooke10.png" width="40%">
+                            <p class="text-justify">Desse exemplo, podemos tirar uma conclusão: quando a soma das forças no bloco for zero e ele estiver parado, então o sistema massa-mola está em equilíbrio. Nesse caso, a relação entre a força elástica e o peso do bloco é um
+                                recurso valioso que podemos utilizar:<br></p><img src="assets/img/lei-de-hooke11.png" width="25%">
+                            <p></p>
                     </div>
                 </div>
             </div>
@@ -137,32 +136,18 @@
                 <li class="page-item"><a class="page-link" href="trilha02.html" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
                 <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha01.html">1</a></li>
                 <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha02.html">2</a></li>
-                <li class="page-item disabled active" style="font-family: Lora, serif;"><a class="page-link" href="trilha03.html">3</a></li>
-                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha04.html">4</a></li>
-                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha05.html">5</a></li>
-                <li class="page-item"><a class="page-link" href="trilha04.html" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                <li class="page-item disabled active" style="font-family: Lora, serif;"><a class="page-link" href="#">3</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="#">4</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="#">5</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
             </ul>
         </nav>
     </div>
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 offset-xl-1 text-center"><img src="assets/img/logo-ufam.png" height="120"><img class="super" src="assets/img/logo-super-sem-texto.png" height="120"></div>
-                    <div class="col-xl-6">
-                        <p class="text-justify" style="font-family: Lora, serif;">Simulador criado a fim de auxiliar estudantes em práticas de laboratório de física. Desenvolvido por alunos participantes de Iniciação Científica e Tecnológica do programa SUPER, projeto entre a Samsung e a Universidade Federal
-                            do Amazonas - UFAM.<br></p>
-                    </div>
-                </div>
-                <hr>
-                <p class="copyright">&nbsp;LabPhysics Simulator © 2021</p>
-            </div>
-        </footer>
+    <div class="footer-dark" style="height: 50px;">
+        <p class="copyright" style="font-family: Lora, serif;">&nbsp;LabPhysics Simulator © 2021</p>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
