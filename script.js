@@ -1,4 +1,4 @@
-let resultado = 0;
+
 
 // const rangers = document.querySelectorAll('.custom-range');
 // let t = document.getElementById('customRangeTensao');
@@ -8,18 +8,52 @@ let resultado = 0;
 //     ranger.addEventListener('calcular', calcularCorrente(t,r));
 // });
 
-function calcularCorrente(tensao, resistencia){
 
-    const visor = document.getElementById('visor');
+function calcular(){
+    const menu = document.getElementById('menuz');
+    let tensao = document.getElementById('resultadoTensao');
+    let corrente = document.getElementById('resultadoCorrente');
+    let resistencia = document.getElementById('resultadoResistencia');
 
-    if(tensao!=0 && resistencia!=0){
-        resultado = tensao/resistencia;
-        resultado *=1000;
-        resultado = resultado.toFixed(2);
-        visor.firstChild.nodeValue = 'Corrente = ' + resultado + ' mA';
+    let resultado = 0;
 
-    }else {
-        visor.firstChild.nodeValue = '0.00 A';
-    }   
+    if(menu.value == 1){
+        const range = document.getElementById('customRangeCorrente');
+        //visor.value = 342;
+    
+        if(tensao.value!=0 && resistencia.value!=0){
+            resultado = tensao.value/resistencia.value;
+            resultado *=1000;
+            resultado = resultado.toFixed(2);
+            corrente.value = resultado;
+            range.value = resultado;
+        }
 
+    }else if(menu.value == 2){
+        const range = document.getElementById('customRangeTensao');
+
+        if(corrente.value!=0 && resistencia.value!=0){
+            resultado = corrente.value*resistencia.value;
+            resultado /= 100000;
+        
+            resultado = resultado.toFixed(2);
+            tensao.value = resultado;
+            range.value = resultado;
+        }
+
+
+    }else if(menu.value == 3){
+        const range = document.getElementById('customRangeResistencia');
+
+        if(corrente.value!=0 && tensao.value!=0){
+            resultado = (tensao.value)/corrente.value;
+            resultado *= 1000;
+            resultado = resultado.toFixed(2);
+            resistencia.value = resultado;
+            range.value = resultado;
+        }
+
+    }
+
+   
 }

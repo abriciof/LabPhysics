@@ -17,55 +17,78 @@
         <div class="container-fluid"><a class="navbar-brand" style="font-family: Lora, serif;">LabPhysics Simulator</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse justify-content-end" id="navcol-2">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html" style="font-family: Lora, serif;">Início</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="trilha01.html">Trilha de Aprendizagem</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="trilha01.html">O que é Física?</a>
-                            <a class="dropdown-item" role="presentation" href="trilha02.html">Experimentação Física</a>
-                            <a class="dropdown-item" role="presentation" href="pags\trilha03.html">Lei de Hooke e a Força Elástica</a>
-                            <a class="dropdown-item" role="presentation" href="#">Lançamento Oblíquo</a>
-                            <a class="dropdown-item" role="presentation" href="#">Lei de Ohm</a>
-                                
-                            <div class="dropdown-divider" role="presentation"></div>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="font-family: Lora, serif;">Início</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="pags/trilha01.html">Trilha de Aprendizagem</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="pags/trilha01.html">O que é Física?</a><a class="dropdown-item" role="presentation" href="pags/trilha02.html">Experimentação Física</a><a class="dropdown-item" role="presentation" href="pags/trilha03.html">Lei de Hooke e a Força Elástica</a>
+                            <a
+                                class="dropdown-item" role="presentation" href="pags/trilha04.html">Lançamento Oblíquo</a><a class="dropdown-item" role="presentation" href="pags/trilha05.html">Lei de Ohm</a>
+                                <div class="dropdown-divider" role="presentation"></div>
                         </div>
                     </li>
-                    <li class="nav-item" role="presentation"></li>
-                   
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="trilha01.html" style="color: #fff;">Simuladores</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="simulador01.html">Lei de Ohm</a>
-                            <a class="dropdown-item" role="presentation" href="#">Lançamento de Projétil</a>
-                           
-                            <a class="dropdown-item" role="presentation" href="#">Lei de Hooke</a>
-                        
-                            
-                                
-                            <div class="dropdown-divider" role="presentation"></div>
-                        </div>
-                    </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="font-family: Lora, serif;">Sobre</a></li>
-                </ul>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: #fff;">Simuladores de Física</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Lei de Hooke e a Força Elástica</a><a class="dropdown-item" role="presentation" href="#">Lançamento Oblíquo</a><a class="dropdown-item" role="presentation" href="#">Lei de Ohm</a>
+                            <div
+                                class="dropdown-divider" role="presentation"></div>
+        </div>
+        </li>
+        <li class="nav-item" role="presentation"></li>
+        <li class="nav-item" role="presentation"></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" href="pags/pag%20de%20testes.html" style="font-family: Lora, serif;">Sobre</a></li>
+        </ul>
         </div>
         </div>
     </nav>
+
     <p></p>
+
     <h1 class="text-center" style="font-family: Lora, serif;"><strong>Lei de Ohm</strong></h1>
     <br>
-    <div class="container">
+
+    <!-- <div class="container">
         <div class="row" style="text-align: center;">
             <div class="col">
                 <img src="../img/Esquema Lei de Ohm - v2.jpg" width="60%">
+                <img src="../img/Esquema Lei de Ohm - v2.jpg" alt="esquema">
             </div>
         </div>
-    </div>
+        
+        
+    </div> -->
+    
     
     <div class="article-clean">
-        <div class="container">             
+        <div class="container"> 
+            <div class="row" style="text-align: center;">
+                <div class="col">
+                    <img src="../img/Esquema Lei de Ohm - v2.jpg" width="60%">
+                </div>
+            </div>            
             <div class="row text-sm-center text-md-center text-lg-right text-xl-right">             
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">  
 
                     <!-- Conteúdo -->     
        
+
                     <div class="container pt-5">
+                        <div class="row" style="text-align: center;">
+                            <div class="col">
+
+                                <form>
+                                    <label for="menuz">
+                                        O que seja encontrar?
+                                    </label>
+                                    <select class="form-select" aria-label="Default select example" id="menuz">
+                                        <option selected value="1"> Corrente </option>
+                                        <option value="2">Tensão</option>
+                                        
+                                        <option value="3">Resistência</option>
+                                      </select>
+                                </form>
+                            </div>
+                        </div>
+
+                        <hr>
                             
                     
                         <div class="row" style="text-align: center;">
@@ -79,29 +102,29 @@
                         </div>
 
                         <div class="row">
-                        <div class="col">                   
-                            <div class="form-group">
-                            <form>
-                                <div class="form-group align-items-center">
-                                <label for="customRangeTensao"></label>
-                                <input type="range" class="custom-range" value="4.5" min="0.1" max="9.0" step="0.1" id="customRangeTensao" 
-                                oninput="resultadoTensao.value=value" onchange="resultadoTensao.value=value">
+                            <div class="col">                   
+                                <div class="form-group">
+                                <form>
+                                    <div class="form-group align-items-center">
+                                    <label for="customRangeTensao"></label>
+                                    <input type="range" class="custom-range" value="4.5" min="0.1" max="9.0" step="0.1" id="customRangeTensao" 
+                                    oninput="resultadoTensao.value=value" onchange="resultadoTensao.value=value">
+                                    </div>
+                                </form>
                                 </div>
-                            </form>
                             </div>
-                        </div>
                         </div>
 
                         <div class="row"><br></div>
 
                         <div class="row" style="text-align: center;">
-                        <div class="col resistencia">
-                            <label>Resistência </label>                                  
-                        </div>
-                        <div class="col ohms" >
-                            <input type="text" id="resultadoResistencia" class="saida-range" value="500" readonly> 
-                            <label>Ohms</label>                    
-                        </div>
+                            <div class="col resistencia">
+                                <label>Resistência </label>                                  
+                            </div>
+                            <div class="col ohms" >
+                                <input type="text" id="resultadoResistencia" class="saida-range" value="500" readonly> 
+                                <label>Ohms</label>                    
+                            </div>
                         </div>
 
                         <div class="row">
@@ -113,26 +136,54 @@
                                     <input type="range" class="custom-range" value="500" min="10" max="1000" step="1" id="customRangeResistencia" 
                                     oninput="resultadoResistencia.value=value" onchange="resultadoResistencia.value=value">
                                     </div>
+                                    
+                                </form>
+                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="text-align: center;">
+                            <div class="col corrente">
+                                <label >Corrente </label>                                  
+                            </div>
+                            <div class="col corrente">
+                                <input type="text" id="resultadoCorrente" class="saida-range" value="450" readonly> 
+                                <label>mA</label>                   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">                   
+                                <div class="form-group">
+                                <form>
+                                    <div class="form-group align-items-center">
+                                    <label for="customRangeCorrente"></label>
+                                    <input type="range" class="custom-range" value="450" min="0.1" max="900" step="0.1" id="customRangeCorrente" 
+                                    oninput="resultadoCorrente.value=value" onchange="resultadoCorrente.value=value">
+                                    </div>
                                 </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="row"><br></div>
+
+                        
+                        
+
+
+                        
+                        <hr>
+                       
+
                         <div class="row">
-                        <div class="col">
-                            <!-- <label>Corrente</label> -->
-                        </div>
-                        </div>
-                        <div class="row"><br></div>
-                        <div class="row">
-                        <div class="col">                
-                            <div class="visor" id="visor">
-                            Corrente = 9.00 mA                  
+                            <!-- <div class="col">                
+                                <div class="visor" id="visor">
+                                Corrente = 9.00 mA                  
+                                </div>
+                            </div> -->
+                            <div class="col">                
+                                <button type="button" class="btn btn-success" onclick="calcular();">Calcular</button>
                             </div>
-                        </div>
-                        <div class="col">                
-                            <button type="button" class="btn btn-success" onclick="calcularCorrente(resultadoTensao.value,resultadoResistencia.value);">Calcular</button>
-                        </div>
                         </div>
                     </div> 
                 </div>
@@ -149,8 +200,20 @@
 
     
 
-    <div class="footer-dark" style="height: 50px;">
-        <p class="copyright" style="font-family: Lora, serif;">&nbsp;LabPhysics Simulator © 2021</p>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 offset-xl-1 text-center"><img src="assets/img/logo-ufam.png" height="120"><img class="super" src="assets/img/logo-super-sem-texto.png" height="120"></div>
+                    <div class="col-xl-6">
+                        <p class="text-justify" style="font-family: Lora, serif;">Simulador criado a fim de auxiliar estudantes em práticas de laboratório de física. Desenvolvido por alunos participantes de Iniciação Científica e Tecnológica do programa SUPER, projeto entre a Samsung e a Universidade Federal
+                            do Amazonas - UFAM.<br></p>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright" style="font-family: Lora, serif;">&nbsp;LabPhysics Simulator © 2021</p>
+            </div>
+        </footer>
     </div>
 
     <script src="../script.js" defer></script>

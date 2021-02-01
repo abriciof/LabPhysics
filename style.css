@@ -77,6 +77,24 @@ figcaption a{
 
 }
 
+#superior {
+  background-color: red;;
+  /* display: absolute; */
+}
+
+#inferior{
+  background-color: blue;
+  /* display: absolute; */
+}
+
+/* 
+#inferior .seta1 {
+  transform: rotate(270deg);
+}
+
+#inferior .seta2 {
+  transform: rotate(90deg);
+} */
 
 
 
