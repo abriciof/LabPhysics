@@ -17,9 +17,8 @@ function calcular(){
 
     let resultado = 0;
 
-    if(menu.value == 1){
+    if(menu.value == 1){ // Corrente
         const range = document.getElementById('customRangeCorrente');
-        //visor.value = 342;
     
         if(tensao.value!=0 && resistencia.value!=0){
             resultado = tensao.value/resistencia.value;
@@ -29,12 +28,12 @@ function calcular(){
             range.value = resultado;
         }
 
-    }else if(menu.value == 2){
+    }else if(menu.value == 2){ // Tensao
         const range = document.getElementById('customRangeTensao');
 
         if(corrente.value!=0 && resistencia.value!=0){
             resultado = corrente.value*resistencia.value;
-            resultado /= 100000;
+            resultado /= 10000;
         
             resultado = resultado.toFixed(2);
             tensao.value = resultado;
@@ -42,12 +41,13 @@ function calcular(){
         }
 
 
-    }else if(menu.value == 3){
+    }else if(menu.value == 3){ // Resistencia
         const range = document.getElementById('customRangeResistencia');
 
         if(corrente.value!=0 && tensao.value!=0){
-            resultado = (tensao.value)/corrente.value;
-            resultado *= 1000;
+            resultado = (tensao.value)/(corrente.value);
+            resultado *= 100000;
+           
             resultado = resultado.toFixed(2);
             resistencia.value = resultado;
             range.value = resultado;
