@@ -43,153 +43,112 @@
     <p></p>
 
     <h1 class="text-center" style="font-family: Lora, serif;"><strong>Lei de Ohm</strong></h1>
-    <br>
-
-    <!-- <div class="container">
-        <div class="row" style="text-align: center;">
-            <div class="col">
-                <img src="../img/Esquema Lei de Ohm - v2.jpg" width="60%">
-                <img src="../img/Esquema Lei de Ohm - v2.jpg" alt="esquema">
-            </div>
-        </div>
-        
-        
-    </div> -->
-    
+    <br>    
     
     <div class="article-clean">
-        <div class="container"> 
-            <div class="row" style="text-align: center;">
-                <div class="col">
-                    <img src="../img/Esquema Lei de Ohm - v2.jpg" width="60%">
-                </div>
-            </div>            
+        <div class="container pt-5"> 
+                
             <div class="row text-sm-center text-md-center text-lg-right text-xl-right">             
                 <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">  
-
-                    <!-- Conteúdo -->     
-       
-
-                    <div class="container pt-5">
-                        <div class="row" style="text-align: center;">
-                            <div class="col">
-
-                                <form>
-                                    <label for="menuz">
-                                        O que deseja calcular?
-                                    </label>
-                                    <select class="form-select" aria-label="Default select example" id="menuz">
-                                        <option selected value="1"> Corrente </option>
-                                        <option value="2">Tensão</option>
-                                        
-                                        <option value="3">Resistência</option>
-                                      </select>
-                                </form>
-                            </div>
+                    <div class="row" style="text-align: center;">
+                        <div class="col">
+        
+                            <form>
+                                <label class="texto-simulador"  for="menuz">
+                                    O que deseja calcular?
+                                </label>
+                                <select class="" aria-label="Default select example" id="menuz" onclick="bloquear(value);">
+                                    <option selected value="1" > Corrente </option>
+                                    <option value="2">Tensão</option>                                        
+                                    <option value="3">Resistência</option>
+                                  </select>
+                            </form>
                         </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="text-align: left;">
+                        <div class="col volts">
+                            <label class="texto-simulador" >Tensão </label>
+                            <input type="text" id="resultadoTensao" class="saida-range" value="4.5" readonly> 
+                            <label class="texto-simulador" >Volts</label>  
+                            <form>
+                                <div class="form-group align-items-center">
+                                <label for="customRangeTensao"></label>
+                                <input type="range" class="custom-range" value="4.5" min="0.1" max="9.0" step="0.1" id="customRangeTensao" 
+                                oninput="resultadoTensao.value=value" onchange="calcular();">
+                                </div>
+                            </form>  
+                                             
+                        </div>
+                        
+                        
+                    </div>
 
-                        <hr>
-                            
+                    <div class="row">
+                        
+                    </div>
                     
-                        <div class="row" style="text-align: center;">
-                            <div class="col tensao">
-                                <label >Tensão </label>                                  
-                            </div>
-                            <div class="col volts">
-                                <input type="text" id="resultadoTensao" class="saida-range" value="4.5" readonly> 
-                                <label>Volts</label>                   
-                            </div>
+                    <div class="row centralizar" style="text-align: right;">
+                        <div class="col-8">
+                            <img src="../img/Esquema Lei de Ohm - v2.jpg" width="100%">
                         </div>
-
-                        <div class="row">
-                            <div class="col">                   
-                                <div class="form-group">
-                                <form>
-                                    <div class="form-group align-items-center">
-                                    <label for="customRangeTensao"></label>
-                                    <input type="range" class="custom-range" value="4.5" min="0.1" max="9.0" step="0.1" id="customRangeTensao" 
-                                    oninput="resultadoTensao.value=value" onchange="resultadoTensao.value=value">
+                        <div class="col-4">                         
+                            <div class="row">
+                                <div class="col-4">                   
+                                    <div class="form-group" style="text-align: left;">
+                                    <form>
+                                        <div class="form-group align-items-center">
+                                        <label for="customRangeCorrente"></label>
+                                        <input type="range" class="custom-range range-corrente" value="450" min="0.1" max="900" step="0.1" id="customRangeCorrente" 
+                                        oninput="resultadoCorrente.value=value" onchange="calcular();">
+                                        </div>
+                                    </form>
                                     </div>
-                                </form>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="row"><br></div>
-
-                        <div class="row" style="text-align: center;">
-                            <div class="col resistencia">
-                                <label>Resistência </label>                                  
-                            </div>
-                            <div class="col ohms" >
-                                <input type="text" id="resultadoResistencia" class="saida-range" value="500" readonly> 
-                                <label>Ohms</label>                    
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">                   
-                                <div class="controlador02">
-                                <form>
-                                    <div class="form-group align-items-center">
-                                    <label for="customRangeResistencia"></label>
-                                    <input type="range" class="custom-range" value="500" min="10" max="1000" step="1" id="customRangeResistencia" 
-                                    oninput="resultadoResistencia.value=value" onchange="resultadoResistencia.value=value">
-                                    </div>
-                                    
-                                </form>
-                                
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row" style="text-align: center;">
-                            <div class="col corrente">
-                                <label >Corrente </label>                                  
-                            </div>
-                            <div class="col corrente">
+                               <div class="col-6" style="text-align: right; margin-left: 90px;">
+                                <label class="texto-simulador" >Corrente </label>   
                                 <input type="text" id="resultadoCorrente" class="saida-range" value="450" readonly> 
-                                <label>mA</label>                   
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">                   
-                                <div class="form-group">
-                                <form>
-                                    <div class="form-group align-items-center">
-                                    <label for="customRangeCorrente"></label>
-                                    <input type="range" class="custom-range" value="450" min="0.1" max="900" step="0.1" id="customRangeCorrente" 
-                                    oninput="resultadoCorrente.value=value" onchange="resultadoCorrente.value=value">
-                                    </div>
-                                </form>
+                                <label class="texto-simulador" >mA</label> 
+                                                       
                                 </div>
+                               
+                               
                             </div>
                         </div>
+                    </div>       
 
-                        
-                        
+                    <br>
 
-
-                        
-                        <hr>
+                    <div class="row" style="text-align: left;">
                        
-
-                        <div class="row">
-                            <!-- <div class="col">                
-                                <div class="visor" id="visor">
-                                Corrente = 9.00 mA                  
+                        <div class="col ohms" >
+                            <label class="texto-simulador">Resistência </label>  
+                            <input type="text" id="resultadoResistencia" class="saida-range " value="500" readonly> 
+                            <label class="texto-simulador">Ohms</label>   
+                            <form>
+                                <div class="form-group align-items-center">
+                                <label for="customRangeResistencia"></label>
+                                <input type="range" class="custom-range" value="500" min="10" max="1000" step="1" id="customRangeResistencia" 
+                                oninput="resultadoResistencia.value=value" onchange="calcular();">
                                 </div>
-                            </div> -->
-                            <div class="col">                
-                                <button type="button" class="btn btn-success" onclick="calcular();">Calcular</button>
-                            </div>
+                                
+                            </form>                 
                         </div>
-                    </div> 
-                </div>
+                    </div>
+
+                  
+
+                    
+                    
+                    <hr>
+                    
+
+                   
+                
                 </div>
             </div>
         </div>
+    </div>
         
 
     <br> <br> <br> <br> <br> <br> <br>
@@ -199,22 +158,33 @@
 
 
     
-
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 offset-xl-1 text-center"><img src="assets/img/logo-ufam.png" height="120"><img class="super" src="assets/img/logo-super-sem-texto.png" height="120"></div>
-                    <div class="col-xl-6">
-                        <p class="text-justify" style="font-family: Lora, serif;">Simulador criado a fim de auxiliar estudantes em práticas de laboratório de física. Desenvolvido por alunos participantes de Iniciação Científica e Tecnológica do programa SUPER, projeto entre a Samsung e a Universidade Federal
-                            do Amazonas - UFAM.<br></p>
-                    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="row branco">
+                <div class="col-xl-4 offset-xl-1 text-center">
+                    
+                    <img src="assets/img/logo-ufam.png" height="120">
+                    <img class="super" src="assets/img/logo-super-sem-texto.png" height="120">
+                   
                 </div>
-                <hr>
-                <p class="copyright" style="font-family: Lora, serif;">&nbsp;LabPhysics Simulator © 2021</p>
+                <div class="col-xl-6">
+                    <p class="text-justify" ><br>Simulador criado a fim de auxiliar estudantes em práticas de laboratório de física. Desenvolvido por alunos participantes de Iniciação Científica e Tecnológica do programa SUPER, projeto entre a Samsung e a Universidade Federal
+                        do Amazonas - UFAM.</p>
+                        
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col">               
+                    <p class="copyright aaa">&nbsp;LabPhysics Simulator © 2021</p>                
+                </div>
+            </div>  
+        </div>
+
+    </footer>
 
     <script src="../script.js" defer></script>
     <script src="assets/js/jquery.min.js"></script>
