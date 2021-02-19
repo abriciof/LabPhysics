@@ -86,3 +86,43 @@ function calcular(){
 
    
 }
+
+
+function moveBall(){ 
+    var ballObj = document.getElementById ("bola"); 
+
+    ballObj.style.background = blue;
+    ballObj.style.left = "70px"; 
+    ballObj.style.top = "80px"; 
+    }
+
+
+
+    function moveDomObj(id, left, top){
+        console.log("entrou 3");
+        const domObj = document.getElementById(id);
+
+        domObj.style.left = left+"px";
+        domObj.style.top = top+"px";
+    }
+
+    var timer2 = null;
+    var s = 0;
+
+    function stepBall2(){
+        console.log("entrou 2");
+        const x = 50+4*s;
+        const y = 35+1.6*s*s;   // a parabolic path y=x*x
+        moveDomObj("bola", x, y);
+        s++;
+        if (s<14){
+            timer2 = setTimeout(stepBall2, 100);
+        }else{
+                s = 0;     // so we can do it again
+            }
+    }
+
+    function startBall2(){
+        console.log("entrou");
+        timer2 = setTimeout(stepBall2, 100);
+    }

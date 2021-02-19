@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Home do Site</title>
+        <script>
+            var context;
+            var x=50;
+            var y=250;
+            var dx=4;
+            var dy=2;
+
+            function init()
+            {
+                context= myCanvas.getContext('2d');
+                setInterval(draw,12);
+            }
+
+            function draw()
+            {
+            context.beginPath();
+            context.fillStyle="#000";
+            // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+            context.arc(x,y,2,0,Math.PI*2,true);
+            context.closePath();
+            context.fill();
+            x+=dx;
+            y-=dy;
+            }
+        </script>
+    </head>
+    <body onLoad="init();"> <!-- " -->
+       
+        <div style="text-align: center;">   
+            <canvas id = "myCanvas" width = "300" height = "250" style="background: red;"> 
+
+            </canvas> 
+
+        </div>
+        
+        
+
+
+        <!-- <div class="BotaoTrilha" id="botao" onclick="startBall2();">  -->
+                    
+<!--               
+            <canvas id="canvas" width="200" height="200"></canvas> -->
+           
+
+            
+        
+
+     
+        <script>
+        //      const canvas = document.getElementById('canvas');
+        //     const ctx = canvas.getContext('2d');
+
+        //     ctx.strokeStyle = "#81C784";
+        //     ctx.lineWidth = 5;
+        //    // ctx.fillStyle = "#81C784";
+            
+        //     // Draw the ellipse
+        //     ctx.beginPath();
+        //     ctx.ellipse(100, 100, 50, 90, Math.PI / 2, 0, 2 * Math.PI);
+        //     ctx.stroke();
+            //ctx.fill();
+            
+            // Draw the ellipse's line of reflection
+            // ctx.beginPath();
+            // ctx.setLineDash([5, 5]);
+            // ctx.moveTo(0, 200);
+            // ctx.lineTo(200, 0);
+            // ctx.stroke();
+           
+
+
+
+            // let t = 0;
+
+            // function vai() {
+            //     let botao = document.getElementById('botao');
+            // console.log(botao);
+
+            // botao.style.top = "50px";
+            // botao.style.left = "100px";
+            // }
+           
+
+
+            // let a = (Math.pow((15),2)*Math.sin(2*60*(Math.PI/180))/9.81).toFixed(2);
+            // let b = (Math.pow(15*Math.sin(60*(Math.PI/180)),2)/(9.81*2)).toFixed(2);
+            // a = a/2;
+
+            
+
+            // function moveDomObj(id, left, top)
+            // {
+            // const domObj = document.getElementById(id);
+
+            // domObj.style.left = left+"px";
+            // domObj.style.top = top+"px";
+            // }
+
+            // var timer2 = null;
+            // var s = 100;
+
+            // function stepBall2()
+            // {
+            // const x = s;
+            // const y = s+1;   // a parabolic path y=x*x
+            // moveDomObj("botao", x, y);
+            // s++;
+            // if (s<500)
+            // {
+            //     timer2 = setTimeout(stepBall2, 20);
+            // }
+            // else
+            // {
+            //     s = 0;     // so we can do it again
+            // }
+            // }
+
+            // function startBall2()
+            // {
+            // timer2 = setTimeout(stepBall2, 20);
+            // }
+
+            // let altura = ( Math.pow(15*Math.sin(60*(Math.PI/180)),2)/(9.81*2) ).toFixed(2);
+            // let alcance = ((15)*Math.cos(60*(Math.PI/180))*t).toFixed(2);
+
+            // x = Math.sqrt((1 - (5/b*b))*(a*a)); 
+                
+            //     y = Math.sqrt((1 - (5/a*a))*(b*b)); 
+
+
+
+           
+
+            
+
+
+
+        </script>
+
+        
+    </body>
+</html>
