@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Lei de Hooke e a Força Elástica</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="../css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid"><a class="navbar-brand" style="font-family: Lora, serif;">LabPhysics Simulator</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse justify-content-end" id="navcol-2">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html" style="font-family: Lora, serif;">Início</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="trilha01.html">Trilha de Aprendizagem</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="trilha01.html">O que é Física?</a>
+                            <a class="dropdown-item" role="presentation" href="trilha02.html">Experimentação Física</a>
+                            <a class="dropdown-item" role="presentation" href="trilha03.html">Lei de Hooke e a Força Elástica</a>
+                            <a class="dropdown-item" role="presentation" href="trilha04.html">Lançamento Oblíquo</a>
+                            <a class="dropdown-item" role="presentation" href="trilha05.html">Lei de Ohm</a>
+                                <div class="dropdown-divider" role="presentation"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Simuladores de Física</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="../Simuladores/Lei de Hooke.html">Lei de Hooke e a Força Elástica</a>
+                            <a class="dropdown-item" role="presentation" href="#">Lançamento Oblíquo</a>
+                            <a class="dropdown-item" role="presentation" href="../Simuladores/Lei de Ohm.html">Lei de Ohm</a>
+                            <div class="dropdown-divider" role="presentation"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="font-family: Lora, serif;">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p></p>
+    <h1 class="text-center" style="font-family: Lora, serif;"><strong>Trilha de Aprendizagem</strong></h1>
+    <p></p>
+    <div class="text-center d-flex justify-content-center">
+        <nav class="text-center justify-content-center">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="trilha02.html" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha01.html">1</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha02.html">2</a></li>
+                <li class="page-item disabled active" style="font-family: Lora, serif;"><a class="page-link" href="trilha03.html">3</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha04.html">4</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha05.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="trilha04.html" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row text-sm-center text-md-center text-lg-right text-xl-right">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2" style="background-color: rgb(238,244,247);">
+                    <div class="intro">
+                        <h1 class="text-center" style="font-size: 26px;">Experimento 01 - Lei de Hooke e a Força Elástica<br></h1>
+                    </div>
+                    <div class="text-center text">
+                        <h2 class="text-left" style="font-size: 20px;font-weight: 700;color: rgb(51,51,51);background-color: rgb(238,244,247);">O que é a Força Elástica?<br></h2>
+                        <div class="text-center"><img src="../img/lei-de-hooke01.jpg" width="70%"></div>
+                        <p class="text-center">Fonte:&nbsp;<a href="https://blog.professorferretto.com.br/wp-content/uploads/2020/04/lei-de-hooke.jpg.webp">Professor Ferreto</a><br></p>
+                        <p class="text-justify">A força elástica é uma resposta da matéria contra deformações causadas por forças externas ou pela ação da temperatura. A força elástica é uma força restauradora, ou seja, age no sentido de restabelecer a condição que o corpo tinha
+                            antes de ser deformado. Em regime elástico, essa força tem proporcionalidade com a deformação do corpo, sendo equacionada pela Lei de Hooke.<br></p>
+                        <p class="text-center">“Em regime elástico, a deformação sofrida por uma mola é diretamente proporcional à intensidade da força aplicada.”<br></p>
+                        <p class="text-justify">Primeiramente, o que devemos entender por “regime elástico”? Bem, uma resposta simples seria: as condições em que a Lei de Hooke é válida. Mais abaixo, iremos estudar melhor o que é um regime elástico e um regime plástico. O importante
+                            agora é entender a relação estabelecida por esta lei.<br></p>
+                        <p class="text-justify">Podemos começar estudando a deformação de molas. A deformação é medida a partir da posição de equilíbrio, que é a posição onde a mola fica parada quando é deixada livre. Vejamos exemplos para entender melhor:<br></p><img class="rounded"
+                            src="../img/lei-de-hooke02.jpg" width="60%">
+                        <p class="text-center">Fonte:&nbsp;<a href="https://blog.professorferretto.com.br/wp-content/uploads/2020/04/forca-elastica-forca-restauradora.jpg.webp">Professor Ferreto</a><br></p>
+                        <div class="row">
+                            <div class="col">
+                                <p></p>
+                            </div>
+                        </div>
+                        <p class="text-justify" style="color: rgb(86,88,91);">Na primeira imagem, temos a posição de equilíbrio, representada por&nbsp;x0. Nenhuma força externa age sobre a mola e ela permaneceria ali para sempre, parada. Ao empurrarmos a mola para a esquerda, causamos uma deformação, comprimindo-a
+                            até a posição -x. A força elástica (que a mola exerce na mão) é direcionada para a direita, ou seja, a mola quer voltar ao comprimento inicial.<br></p>
+                        <p class="text-justify">Na terceira imagem, a mola é esticada até a posição x, em uma deformação para a direita. A força elástica, agora, é para a esquerda, ou seja, a mola quer voltar ao tamanho inicial. Note a relação entre deformação e força elástica,
+                            são sempre em sentidos opostos. É isso que o sinal negativo significa na fórmula:<br></p>
+                        <div class="text-center"><img src="../img/lei-de-hooke03.jpg" width="20%">
+                            <p class="text-justify"><br></p>
+                        </div>
+                        <p class="text-justify">A força elástica estará sempre em sentido contrário à deformação da mola. Por esse motivo, a força elástica também é chamada de força restauradora, pois é a resposta que a mola dá a uma ação externa e tenta levar a mola para a
+                            condição inicial (comprimento inicial).<br></p>
+                        <p class="text-justify">Conhecendo essa relação entre deformação e força elástica, podemos trabalhar diretamente com os módulos (valores) através da seguinte fórmula:<br></p><img src="../img/lei-de-hooke04.png" width="20%">
+                        <p class="text-justify"><br></p>
+                        <div class="text-right">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row text-sm-center text-md-center text-lg-right text-xl-right">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="text-center"></div>
+                    <hr>
+                    <div class="text-center text">
+                        <p class="text-justify"><br></p>
+                        <div class="text-right">
+                            <h2 class="text-left" style="font-size: 20px;font-weight: 700;color: rgb(51,51,51);">Quais são as unidades de medidas usadas para o cálculo da Força Elástica?</h2><img src="../img/lei-de-hooke05.jpg" width="50%">
+                            <p>Fonte:&nbsp;<a href="https://blog.professorferretto.com.br/wp-content/uploads/2020/04/unidades-de-medida-da-forca-elastica.jpg.webp">Professor Ferreto</a>&nbsp;</p>
+                            <p></p>
+                        </div>
+                        <p class="text-justify">Antes de prosseguirmos com cálculos, precisamos conhecer as unidades que vamos utilizar para a constante elástica. A constante elástica mede a dureza da mola e um modo relativamente simples de descobrir como ela é medida se dá
+                            através da análise da fórmula:<br></p><img src="../img/lei-de-hooke06.png" width="70%">
+                        <p></p>
+                        <p class="text-justify">Assim, descobrimos que a constante elástica é expressa em termos de uma unidade de força e uma unidade de comprimento. E é isso mesmo, a constante elástica não possui nenhuma unidade especial. Logo mais, ao efetuarmos alguns cálculos,
+                            você verá a praticidade dessa unidade.&nbsp;<br></p>
+                        <p class="text-justify">Agora, quais seriam as formas mais comuns de expressar a constante elástica? No SI, ela é dada por N/m (newton por metro), mas, também costumam aparecer N/cm (newton por centímetro) e kN/m (quilonewton por metro).&nbsp;Conforme
+                            já dito, a constante elástica mede a dureza da mola. Então, quanto mais dura for a mola, maior será sua constante elástica. Desse modo, ao comparar duas molas, de constantes elásticas iguais a 200 N/m e 300 N/m, você sabe que
+                            a segunda mola é a mais dura, por exemplo.<br></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8 offset-1 offset-sm-1 offset-md-1 offset-lg-2 offset-xl-2" style="background-color: #ffffff;">
+        <div class="text-center text">
+            <h3 class="text-left" style="font-family: Lora, serif;">Referências:<br></h3><a href="#"></a>
+            <p class="text-left description" style="font-family: Lora, serif;"><strong>Força Elástica e Lei de Hooke</strong>. Professor Ferreto. Disponível&nbsp;<a href="https://blog.professorferretto.com.br/forca-elastica-lei-de-hooke/">aqui</a>.<br></p>
+        </div>
+    </div>
+    <div class="text-center d-flex justify-content-center">
+        <nav class="text-center justify-content-center">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="trilha02.html" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha01.html">1</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha02.html">2</a></li>
+                <li class="page-item disabled active" style="font-family: Lora, serif;"><a class="page-link" href="trilha03.html">3</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha04.html">4</a></li>
+                <li class="page-item" style="font-family: Lora, serif;"><a class="page-link" href="trilha05.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="trilha04.html" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row branco">
+                <div class="col-xl-4 offset-xl-1 text-center">
+                    <br>
+                    <img src="../img/logo-ufam.png" height="120">
+                    <img class="super" src="../img/logo-super-sem-texto.png" height="120">
+                   
+                </div>
+                <div class="col-xl-6">
+                    <p class="text-justify" ><br>Simulador criado a fim de auxiliar estudantes em práticas de laboratório de física. Desenvolvido por alunos participantes de Iniciação Científica e Tecnológica do programa SUPER, projeto entre a Samsung e a Universidade Federal
+                        do Amazonas - UFAM.</p>
+                        
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col">               
+                    <p class="copyright aaa">&nbsp;LabPhysics Simulator © 2021</p>                
+                </div>
+            </div>  
+        </div>
+
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="../js/script.min.js"></script>
+</body>
+
+</html>
