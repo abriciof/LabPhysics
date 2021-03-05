@@ -57,23 +57,21 @@
 
     <div class="container" 
         style="height: 90vh;
-        border-width: 0.5px;
-        border-style: solid;
-        border-radius: 3px;
+       
         text-align: center;" 
         >
         <hr>
         <div  style="text-align: left;">
-        <p> Escolha um ângulo (graus) e uma velocidade (m/s) para iniciar a simulação.</p>
+        <p> Escolha um ângulo e uma velocidade para iniciar a simulação.</p>
         </div>
        
         <div class="row centralizar">
-            <div class="col-lg-7 col-xl-8">
+            <div class="col-lg-8 col-xl-8">
                 <canvas id="canvas" width="675px" height="400px" style="border: 1px solid #24252a"></canvas>              
             </div>
 
             <br>
-            <div class="col-auto col-md-8 col-lg-4 col-xl-3 caixa-formulario">
+            <div class="col-auto col-md-8 col-lg-4 col-xl-4 caixa-formulario">
                 
                 <form name="f" id="f" onsubmit="return fire();">
                     <div class="row" style="text-align: center;">
@@ -85,9 +83,9 @@
                        <!-- Unidades no Sistema Internacional <br><br>  -->
                     <div class="row">
                         <div class="col">
-                            <label>Velociade Inicial </label>
-                    <input type="text" id="vo" class="saida-text" value="50" readonly >
-                    <input value="50" type="range" class="custom-range" min="0" max="100" id="customRangeVelocidade" oninput="vo.value=value " onchange="vo.value=value ">
+                            <label>Velociade Inicial: </label>
+                    <input type="text" id="vo" class="saida-text" value="50 m/s" readonly >
+                    <input value="50" type="range" class="custom-range" min="0" max="100" id="customRangeVelocidade" oninput="vo.value=value+ ' m/s'" onchange="vo.value=value + ' m/s'">
                     
                         </div>
                         
@@ -95,48 +93,57 @@
 
                     <div class="row">
                         <div class="col">
-                            <label>Ângulo</label>
-                            <input type="text" id="ang" class="saida-text" value="45" readonly>
-                            <input  value="45" type="range" class="custom-range" min="0" max="90" id="customRangeAngulo" oninput="ang.value=value;  rotacionar();" onchange="ang.value=value;">
+                            <label>Ângulo:</label>
+                            <input type="text" id="ang" class="saida-text" value="45°" readonly>
+                            <input  value="45" type="range" class="custom-range" min="0" max="90" id="customRangeAngulo" oninput="ang.value=value+'°';  rotacionar();" onchange="ang.value=value+'°';">
         
                         </div>
                     </div>
                    
                     <hr>
-                    <div class="row">
-                        <div class="col">
-                           <label>Tempo da Altura Máxima:</label> 
-                           <input type="text" class="saida-text" id= "idTempoMax"/> 
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col">
-                            <label>Tempo ao atingir o solo: </label>
-                            <input type="text" class="saida-text" id="idTempoalcance"> 
-                            <br>
-                        </div>  
-                        
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col">
-                            <label> Altura Máxima:</label>
-                            <input type="text" class="saida-text" id="idAlturaMax"/> 
+                    <div class="row" style="text-align: center;">
+
+                        <div class="col" >
+                            
+                            <table>
+                                <tr>
+                                    <td>  <label>Tempo da Altura Máxima:</label></td>
+                                    <td> </td>
+                                    <td>  <input type="text" class="saida-text" id= "idTempoMax"/> </td>
+                                </tr>
+                                <tr>
+                                    <td>  <label>Tempo ao atingir o solo: </label> </td>
+                                    <td>&nbsp;</td>
+                                    <td>  <input type="text" class="saida-text" id="idTempoalcance"></td>
+                                </tr>
+                                <tr>
+                                    <td><label> Altura Máxima:</label></td>
+                                    <td>&nbsp;</td>
+                                    <td><input type="text" class="saida-text" id="idAlturaMax"/> </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td> <label>Alcance:</label> </td>
+                                    <td>&nbsp;</td>
+                                    <td>  <input type="text" class="saida-text" id="idAlcance"> </td>
+                                </tr>
+                            </table>
+
+                       
+
+
+
+
+
+
+                          
+                           
+                          
+                            
                         </div>
                        
                     </div>
-                   
-                    <div class="row">
-                        <div class="col">
-                            <label>Alcance:</label>
-                           <input type="text" class="saida-text" id="idAlcance"> 
-                        </div>
-                      
-                    </div>
-                 
-                   
+                                    
                    
                     
                 </form>
@@ -147,7 +154,7 @@
     </div>
 
 
-   
+    <br>  <br>  <br>  <br>  <br>
         
     <hr>
  

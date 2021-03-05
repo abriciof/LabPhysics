@@ -154,8 +154,8 @@ function rotacionar() {
     ctx.fillText('Gravidade: 9,81 m/s²',515,25);
     
 
-    var angle = Number(document.f.ang.value);
-    var outofcannon = Number(document.f.vo.value);
+    var angle = Number(document.f.customRangeAngulo.value);
+    var outofcannon = Number(document.f.customRangeVelocidade.value);
     var angleradians = angle*Math.PI/180;
     horvelocity =  outofcannon*Math.cos(angleradians);
     verticalvel1 = - outofcannon*Math.sin(angleradians);
@@ -209,8 +209,8 @@ function fire() {
     ctx.fillText('Gravidade: 9,81 m/s²',515,25);
     
 
-    var angle = Number(document.f.ang.value);
-    var outofcannon = Number(document.f.vo.value);
+    var angle = Number(document.f.customRangeAngulo.value);
+    var outofcannon = Number(document.f.customRangeVelocidade.value);
     var angleradians = angle*Math.PI/180;
     horvelocity =  outofcannon*Math.cos(angleradians);
     verticalvel1 = - outofcannon*Math.sin(angleradians);
