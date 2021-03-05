@@ -80,15 +80,13 @@
                             <input type="submit" class="botao-lancar" id="botao-lancar" value="Lançar" value="Lançar" onclick="resultante();" style="color: white; text-align: center;"> <br></p>
                         </div>
                     </div>
-                       <!-- Unidades no Sistema Internacional <br><br>  -->
+                       
                     <div class="row">
                         <div class="col">
                             <label>Velociade Inicial: </label>
-                    <input type="text" id="vo" class="saida-text" value="50 m/s" readonly >
-                    <input value="50" type="range" class="custom-range" min="0" max="100" id="customRangeVelocidade" oninput="vo.value=value+ ' m/s'" onchange="vo.value=value + ' m/s'">
-                    
-                        </div>
-                        
+                            <input type="text" id="vo" class="saida-text" value="50 m/s" readonly >
+                            <input value="50" type="range" class="custom-range" min="0" max="100" id="customRangeVelocidade" oninput="vo.value=value+ ' m/s'" onchange="vo.value=value + ' m/s'">
+                         </div>
                     </div>
 
                     <div class="row">
@@ -96,15 +94,13 @@
                             <label>Ângulo:</label>
                             <input type="text" id="ang" class="saida-text" value="45°" readonly>
                             <input  value="45" type="range" class="custom-range" min="0" max="90" id="customRangeAngulo" oninput="ang.value=value+'°';  rotacionar();" onchange="ang.value=value+'°';">
-        
-                        </div>
+                            </div>
                     </div>
                    
                     <hr>
-                    <div class="row" style="text-align: center;">
 
-                        <div class="col" >
-                            
+                    <div class="row" style="text-align: center;">
+                        <div class="col">                            
                             <table>
                                 <tr>
                                     <td>  <label>Tempo da Altura Máxima:</label></td>
@@ -128,28 +124,10 @@
                                     <td>  <input type="text" class="saida-text" id="idAlcance"> </td>
                                 </tr>
                             </table>
-
-                       
-
-
-
-
-
-
-                          
-                           
-                          
-                            
-                        </div>
-                       
+                        </div>                       
                     </div>
-                                    
-                   
-                    
                 </form>
             </div>
-            
-            
         </div>
     </div>
 
