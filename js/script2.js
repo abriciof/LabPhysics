@@ -151,7 +151,7 @@ function rotacionar() {
     ctx.font='18px serif';
     ctx.lineWidth=4;
     ctx.fillStyle='black';
-    ctx.fillText('Gravidade: 9,81 m/s²',515,25);
+    ctx.fillText('Gravidade: 9,81 m/s²',470,30);
     
 
     var angle = Number(document.f.customRangeAngulo.value);
@@ -187,8 +187,7 @@ function init(){
     ctx.font='18px serif';
     ctx.lineWidth=4;
     ctx.fillStyle='black';
-    ctx.fillText('Gravidade: 9,81 m/s²',515,25);
-    
+    ctx.fillText('Gravidade: 9,81 m/s²',470,30);
 
     
     drawall();  
@@ -206,7 +205,7 @@ function fire() {
     ctx.font='18px serif';
     ctx.lineWidth=4;
     ctx.fillStyle='black';
-    ctx.fillText('Gravidade: 9,81 m/s²',515,25);
+    ctx.fillText('Gravidade: 9,81 m/s²',470,30);
     
 
     var angle = Number(document.f.customRangeAngulo.value);
