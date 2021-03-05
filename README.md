@@ -1,6 +1,6 @@
 <h1> Repositório do LabPhysics Simulator </h1>
 
-Hospedado em <a href="https://lab-physics.herokuapp.com/"> LabPhysics Simulator</a>
+Hospedado em <a href="https://lab-physics.herokuapp.com/" target="_blank"> LabPhysics Simulator</a>
 
 <h2>Integrantes</h2>
  <ul>
