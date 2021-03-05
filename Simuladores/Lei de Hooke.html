@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  
-  <meta charset="utf-8">
+<head>  
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Simuladores - Lei de Hooke</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">    
     <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/app.min.css">
+    <script src="../js/bundle.js"></script>
 </head>
 
 <body ng-app="hookesLaw" ng-controller="MainCtrl as main">
@@ -31,9 +31,9 @@
                     <li class="nav-item dropdown">
                         <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Simuladores de Física</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" role="presentation" href="../Simuladores/Lei de Hooke.html">Lei de Hooke e a Força Elástica</a>
-                            <a class="dropdown-item" role="presentation" href="#">Lançamento Oblíquo</a>
-                            <a class="dropdown-item" role="presentation" href="../Simuladores/Lei de Ohm.html">Lei de Ohm</a>
+                            <a class="dropdown-item" role="presentation" href="Lei de Hooke.html">Lei de Hooke e a Força Elástica</a>
+                            <a class="dropdown-item" role="presentation" href="Lançamento Obliquo.html">Lançamento Oblíquo</a>
+                            <a class="dropdown-item" role="presentation" href="Lei de Ohm.html">Lei de Ohm</a>
                             <div class="dropdown-divider" role="presentation"></div>
                         </div>
                     </li>
@@ -54,10 +54,16 @@
     <br>
 
     <div class="container">
+        
         <div class="row text-sm-center text-md-center text-lg-right text-xl-right">
+           
             <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
                 
+                
                 <hr>    
+                <div  style="text-align: left;">
+                    <p> Selecione a constante elástica e arraste a bola para a esquerda para realizar a simulação.</p>
+                    </div>
 
                 <div class="row" style="text-align: center;">  
                     <div class="col">
@@ -153,7 +159,7 @@
 
 
 
-  <script src="../js/bundle.js"></script>
+  <!-- <script src="../js/bundle.js"></script> -->
   <script src="../js/script3.js"></script>
   <script src="../js/jquery.min.js"></script>
   <script src="../bootstrap/js/bootstrap.min.js"></script>
