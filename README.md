@@ -7,6 +7,6 @@ Hospedado em https://lab-physics.herokuapp.com/
   <li> Prof. Francisco Januário</li>
   <li>Fabrício Guimarães</li>
   <li>Gabriel Freitas</li>
-  <li>IaraBeatriz</li>
+  <li>Iara Beatriz</li> 
 
 </ul>
