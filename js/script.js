@@ -39,6 +39,11 @@ function bloquear(value){
 
 function calcular(){
     const menu = document.getElementById('menuz');
+
+    let rangeTensao = document.getElementById('customRangeTensao');
+    let rangeCorrente = document.getElementById('customRangeCorrente');
+    let rangeResistencia = document.getElementById('customRangeResistencia');
+
     let tensao = document.getElementById('resultadoTensao');
     let corrente = document.getElementById('resultadoCorrente');
     let resistencia = document.getElementById('resultadoResistencia');
@@ -46,40 +51,38 @@ function calcular(){
     let resultado = 0;
 
     if(menu.value == 1){ // Corrente
-        const range = document.getElementById('customRangeCorrente');
-
-    
-        if(tensao.value!=0 && resistencia.value!=0){
-            resultado = tensao.value/resistencia.value;
-            resultado *=1000;
+          
+        if(rangeTensao.value!=0 && rangeResistencia.value!=0){
+            resultado = rangeTensao.value/rangeResistencia.value;
+             resultado *=1000;
             resultado = resultado.toFixed(1);
-            corrente.value = resultado;
-            range.value = resultado;
+            corrente.value = resultado + ' mA';
+            rangeCorrente.value = resultado;
         }
 
     }else if(menu.value == 2){ // Tensao
-        const range = document.getElementById('customRangeTensao');
-
-        if(corrente.value!=0 && resistencia.value!=0){
-            resultado = corrente.value*resistencia.value;
-            resultado /= 10000;
         
+        if(rangeCorrente.value!=0 && rangeResistencia.value!=0){
+            resultado = rangeCorrente.value/1000;
+            resultado = resultado*rangeResistencia.value;
+            
+            
             resultado = resultado.toFixed(1);
-            tensao.value = resultado;
-            range.value = resultado;
+            tensao.value = resultado + ' V';
+            rangeTensao.value = resultado;
         }
 
 
     }else if(menu.value == 3){ // Resistencia
-        const range = document.getElementById('customRangeResistencia');
 
-        if(corrente.value!=0 && tensao.value!=0){
-            resultado = (tensao.value)/(corrente.value);
-            resultado *= 100000;
+        if(rangeCorrente.value!=0 && rangeTensao.value!=0){
+            resultado = rangeCorrente.value/1000;
+            resultado = (rangeTensao.value)/resultado;
+            // resultado *= 100000;
            
             resultado = resultado.toFixed(1);
-            resistencia.value = resultado;
-            range.value = resultado;
+            resistencia.value = resultado +' Ω';
+            rangeResistencia.value = resultado;
         }
 
     }
