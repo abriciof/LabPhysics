@@ -1,0 +1,11 @@
+.navbar-toggler {
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+}
+
+.navbar {
+    padding: .5rem .9rem;
+}
