@@ -161,10 +161,10 @@ figcaption a{
 
 .vh-100 { height: 100vh; }
 
-.box {
+/* .box {
   height: 60px;
   width: 60px;
-}
+} */
 
 .grab { cursor: -webkit-grab; cursor: grab; }
 .grabbing { cursor: -webkit-grabbing; cursor: grabbing; }
