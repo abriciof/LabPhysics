@@ -2,8 +2,7 @@ function resultante(){
     let rangeAngulo = document.getElementById('customRangeAngulo');
     let rangeVelocidade = document.getElementById('customRangeVelocidade');    
 
-    let angulo = document.getElementById('ang');
-  
+    let angulo = document.getElementById('ang');  
     let velocidade = document.getElementById('vo');
 
     let tempomax = document.getElementById('idTempoMax');    
