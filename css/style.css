@@ -154,7 +154,9 @@ figcaption a{
   cursor: pointer;
 }
 
-
+.icone {
+  width: 50%;
+}
 
 
 /* Default custom properties */
