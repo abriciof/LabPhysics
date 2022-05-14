@@ -15,7 +15,7 @@ Sua plataforma para o aprendizado de física por meio de experimentos simulados.
 ## 🌳 Ramos da Aplicação
 
 ### 📚 Trilha de Aprendizado
-
+Ramo responsável pela introdução de conteúdos, conceitos, definições para o usuário da plataforma.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/65060013/168405749-b23bd190-aeea-4e1f-917e-0fed1e119eb1.gif">
@@ -23,25 +23,33 @@ Sua plataforma para o aprendizado de física por meio de experimentos simulados.
 
 
 
-Ramo responsável pela introdução de conteúdos, conceitos, definições para o usuário da plataforma.
+
 
 
 <hr>
 
-### 🛠️ Classificador de Componentes
+### 🛠️ Simuladores
+Ramo que o usuário é capaz de realizar os experimentos já conceituados na trilha de aprendizado, são eles:
+
+- Lei de Hooke
+- Lançamento Oblíquo
+- Lei de Ohm
+
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/65060013/153951837-932adc0b-93b7-48a5-947b-2e7befb3290f.gif">
+  <img src="https://user-images.githubusercontent.com/65060013/168405920-6014e6c0-7625-46cc-91c1-8d94469ffeb4.gif">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65060013/168406071-e098f776-8ce1-4f19-be2e-9c94fc84fd53.gif">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/65060013/168406223-91fe3698-8231-4083-85ba-2fecd61ec912.gif">
 </p>
 
 
-Ramo que o usuário é capaz de fazer o upload de uma imagem para o classificador agir. O classificador foi treinado para detectar 4 tipos de componentes, são eles:
-
-- Fusível
-- Relê
-- Capacitor eletrolítico
-- LED
 
 
 ## ✍️ Autores
