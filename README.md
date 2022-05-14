@@ -54,21 +54,16 @@ Ramo que o usuário é capaz de realizar os experimentos já conceituados na tri
 
 ## ✍️ Autores
 
-> *Fabrício Guimarães* 
-> - Engenharia da Computação UFAM 
-> 
->
-> *Gabriel Freitas*
-> - Engenharia Elétrica UFAM
-> 
->
-> *Iara Beatriz* 
-> - Engenharia Elétrica UFAM
->
+> *Fabrício Guimarães* <br>
+> *Gabriel Freitas* <br>
+> *Iara Beatriz*  <br>
+> - *Faculdade de Tecnologia - UFAM*
+
 
 
 
 <p align="center">
+  
   <br>
   <img src="https://user-images.githubusercontent.com/65060013/156955108-35069a93-3c6e-4e07-abf8-dfd5f3a443bb.png" style="width:10%">
     <img src="https://user-images.githubusercontent.com/65060013/156952397-8edfe44c-edfc-406c-bfb0-87f7a5e73e0b.png" style="width:10%">
